@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="./figuras.html">Figuras Geometricas</a>
+              <a class="nav-link active" href="./figuras.html">Figuras Geometricas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -33,7 +33,7 @@
         </div>  
       </nav>
     <section>
-        <div class="container mt-4">
+        <div class="container mt-4 jumbotron">
             <h2 class="text-secondary">Calcula el area y perimetro de un cuadrado</h2>
             <div class="card">
                 <div class="card-header">
@@ -46,17 +46,20 @@
                     <input id="inputCuadrado"type="number"/>
                 </div>
                 <div class="card-footer">
-                    <button type="button" class="btn btn-dark" onclick="calcularPerimetroCuadrado()">
-                        Calcular el perimetro
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                       Calcular
                     </button>
-                    <button type="button" class="btn btn-dark" onclick="calcularAreaCuadrado()">
-                        Calcular el area
-                    </button></div>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item"  href="#" type="button" class="btn btn-dark" onclick="calcularAreaCuadrado()">Area</a>
+                      <a class="dropdown-item"  href="#" type="button" class="btn btn-dark"  onclick="calcularPerimetroCuadrado()">Perimetro</a>
+                    </div>
+                  </div>
                 </div>
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="container jumbotron">
             <h2 class="text-secondary">Calcula el area y perimetro de un triangulo</h2>
             <div class="card">
               <div class="card-header">
@@ -76,18 +79,20 @@
                 </label>
                 <input id="inputTrianguloBase"type="number"/></div> 
                 <div class="card-footer">
-                    <button type="button" class="btn btn-dark" onclick="calcularPerimetroTriangulo()">
-                        Calcular el perimetro
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                       Calcular
                     </button>
-                    <button type="button" class="btn btn-dark" onclick="calcularAreaTriangulo()">
-                        Calcular el area
-                    </button>
-                </div>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item"  href="#" type="button" class="btn btn-dark" onclick="calcularAreaTriangulo()">Area</a>
+                      <a class="dropdown-item"  href="#" type="button" class="btn btn-dark" onclick="calcularPerimetroTriangulo()">Perimetro</a>
+                    </div> 
+                  </div>
                 </div>
           </div>
     </section>
     <section>
-        <div class="container">
+        <div class="container jumbotron">
             <h2 class="text-secondary">Calcula el area, perimetro y diametro de un circulo</h2>
             <div class="card">
               <div class="card-header">
@@ -100,15 +105,18 @@
                 <input id="inputCirculo"type="number"/>
               </div> 
               <div class="card-footer">
-                <button type="button" class="btn btn-dark" onclick="calcularAreaCirculo()">
-                    Calcular el area
-                </button>
-                <button type="button" class="btn btn-dark" onclick="calcularPerimetroCirculo()">
-                    Calcular el perimetro
-                </button>
-                <button type="button" class="btn btn-dark" onclick="calcularDiametroCirculo()">
-                    Calcular el diametro
-                </button>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                     Calcular
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item"  href="#" type="button" class="btn btn-dark" onclick="calcularAreaCirculo()">Area</a>
+                    <a class="dropdown-item"  href="#" type="button" class="btn btn-dark" onclick="calcularPerimetroCirculo()">Perimetro</a>
+                    <a class="dropdown-item"  href="#" type="button" class="btn btn-dark" onclick="calcularDiametroCirculo()">Diametro</a>
+                  </div> 
+                </div>
+              </div>
+                
               </div>
             </div>
           </div>
