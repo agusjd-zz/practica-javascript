@@ -84,6 +84,14 @@ function calcularAreaTriangulo(){
 
 }
 
+function alturaIsoceles(lado1,lado2,base){
+    if (lado1 === lado2 && lado1 != base) {
+        
+        
+    }
+
+}
+
 //Funciones Circulo
 
 function calcularAreaCirculo(){

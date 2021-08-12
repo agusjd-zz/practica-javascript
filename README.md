@@ -11,3 +11,13 @@
 -Tercer paso: crear funciones
 
 -Cuarto paso: integrar JS con HTML
+
+## Porcentajes y descuentos
+
+-Primer paso: definir las formulas
+
+-Segundo paso: implementar formulas en JavaScript
+
+-Tercer paso: crear funciones
+
+-Cuarto paso: integrar JS con HTML
