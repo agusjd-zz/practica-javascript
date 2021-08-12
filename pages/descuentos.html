@@ -32,19 +32,32 @@
 
       </nav>
       <section>
-        <form>
-          <h2>Calcula el descuento de tu producto</h2>
-          <label for="inputPrice">Escribe el precio de tu producto</label>
-          <input id="inputPrice" type="number" />
-          <label for="inputDiscount">Escribe tu descuento</label>
-          <input id="inputDiscount" type="number"/>
-          <button type="button" onclick="buttonPriceDiscount()">
-                Calcular precio con descuento
-          </button>
-          <p id="resultPrice"></p>
-        </form>
+        <div class="container mt-4">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="text-center text-secondary">Calcula el descuento de tu producto</h2>
+            </div>
+            <div class="card-body">
+              <label for="inputPrice">Escribe el precio de tu producto</label>
+              <input id="inputPrice" type="number" class="form-control form-control-sm" />
+              <label for="inputDiscount" >Escribe tu descuento</label>
+              <input id="inputDiscount" type="number" class="form-control form-control-sm"/>
+            </div>
+            <div class="card-footer"> 
+              <button type="button" class="btn btn-primary" onclick="buttonPriceDiscount()">
+              Calcular precio con descuento
+              </button>
+              <p id="resultPrice" class="mt-4"></p>
+            </div>
+          </div>
+       </div>
+     
       </section>
+    
+    <footer class="jumbotron bg-primary">
+    
 
+    </footer>
     <script src="../js/descuentos.js"></script>
 </body>
 </html>
