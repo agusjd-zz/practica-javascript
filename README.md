@@ -2,6 +2,8 @@
 
 ..
 
+https://agusjd.github.io/practica-javascript/
+
 ## Figuras Geometricas
 
 -Primer paso: definir las formulas
