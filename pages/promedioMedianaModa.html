@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salarios</title>
+    <title>Promedio-Mediana-Moda</title>
     <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -22,22 +22,39 @@
               <a class="nav-link" href="./figuras.html">Figuras Geometricas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./descuentos.html">Porcentajes y descuentos</a>
+              <a class="nav-link active" href="./descuentos.html">Porcentajes y descuentos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./promedioMedianaModa.html">Promedio,mediana y moda</a>
+              <a class="nav-link" href="#">Promedio,mediana y moda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Analisis Salarial</a>
-            </li>       
+              <a class="nav-link" href="./salarios.html">Analisis Salarial</a>
+            </li>     
           </ul>
         </div>  
       </nav>
-    <footer class="jumbotron bg-primary p-5 text-center">
+      <div class="container mt-5 mb-5">
+          <form action="">
+              <label for="inputNumber">Ingrese el numero a agregar a la lista</label>
+              <input type="number" name="" id="inputNumber">
+              <button type="button" onclick="addNumber()">Agregar</button>
+              <label for="nRemove">Ingrese el numero a eliminar de la lista</label>
+              <input type="numbre" id="nRemove">
+              <button type="button" onclick="erase()">Eliminar</button>
+              <p id="listOfNumbers"></p>
+              <button type="button" onclick="calculate()">Calcular Promedio</button>
+              <button type="button">Calcular Mediana</button>
+              <button type="button">Calcular Moda</button>
+              <p id="result"></p>
+          </form>
+      </div>
+
+      <footer class="jumbotron bg-primary p-5 text-center">
         <p>Desarrollada por <a href="https://www.linkedin.com/in/agusjd92/" target="_blank" class="text-dark">Agustin Diaz<a></p>
     
-      </footer>
-    <script src="../js/salarios.js"></script>
-    <script src="../js/analisis.js"></script>
+      </footer> 
+
+    <script src="../js/promedio.js"></script>
+
 </body>
 </html>
